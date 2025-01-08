@@ -1,0 +1,21 @@
+{
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "tubes/lib/commons-cli-1.9.0.jar",
+        "tubes/lib/httpclient5-5.4.1.jar",
+        "tubes/lib/httpclient5-cache-5.4.1.jar",
+        "tubes/lib/httpclient5-fluent-5.4.1.jar",
+        "tubes/lib/httpclient5-testing-5.4.1.jar",
+        "tubes/lib/httpcore5-5.3.1.jar",
+        "tubes/lib/httpcore5-5.3.1-tests.jar",
+        "tubes/lib/httpcore5-h2-5.3.1.jar",
+        "tubes/lib/httpcore5-reactive-5.3.1.jar",
+        "tubes/lib/httpcore5-testing-5.3.1.jar",
+        "tubes/lib/json-simple-1.1.1.jar",
+        "tubes/lib/reactive-streams-1.0.4.jar",
+        "tubes/lib/rxjava-2.2.21.jar",
+        "tubes/lib/rxjava-3.1.9.jar",
+        "tubes/lib/slf4j-api-1.7.36.jar"
+    ]
+}
