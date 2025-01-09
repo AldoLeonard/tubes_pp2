@@ -3,12 +3,13 @@ package view;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.*;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
-import java.sql.*;
 
 public class JenisSampahView {
 
+    @SuppressWarnings("CallToPrintStackTrace")
     private static Connection connect() {
         Connection conn = null;
         try {
@@ -20,6 +21,7 @@ public class JenisSampahView {
         return conn;
     }
 
+    @SuppressWarnings("CallToPrintStackTrace")
     private static void loadData(DefaultTableModel tableModel) {
         // Hapus semua baris sebelumnya di tabel
         tableModel.setRowCount(0);
@@ -43,6 +45,7 @@ public class JenisSampahView {
         }
     }
 
+    @SuppressWarnings("Convert2Lambda")
     public static void open() {
 
         JFrame frame = new JFrame("Jenis Sampah Elektronik");
@@ -58,6 +61,7 @@ public class JenisSampahView {
         // Membuat tabel dengan model yang telah ditentukan
         JTable table = new JTable(tableModel) {
             // Membuat tabel tidak dapat diedit
+            @SuppressWarnings("override")
             public boolean isCellEditable(int row, int column) {
                 return false;
             }
@@ -92,6 +96,7 @@ public class JenisSampahView {
         // Fungsi untuk menambahkan data
         addButton.addActionListener(new ActionListener() {
             @Override
+            @SuppressWarnings("CallToPrintStackTrace")
             public void actionPerformed(ActionEvent e) {
                 // Membuat input form untuk menambahkan data
                 JTextField jenisSampahField = new JTextField(10);
